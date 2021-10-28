@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link rel="stylesheet" href="./styles/css/index.css">
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <title>Codelandia - Blog</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav>
+      <div class="page-links">
+        <a href="#" class="main-page">
+          <img src="./images/codelandia-logo.svg" alt="logo">
+        </a>
+        
+        <span class="page-type">Blog </span>
+      </div>
+
+     <div class="search-area">
+       <img  class="search-icon"src="./images/search.svg" alt="pesquise aqui">
+       <input type="text" placeholder="Pesquisar no blog">
+     </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="headlines" class="headlines">
+    </section>
+  </main>
+
+  <script type="module">
+    import {headlines} from './index.js'
+  </script>
+</body>
+</html>
