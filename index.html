@@ -25,7 +25,9 @@
 
      <div class="search-area">
        <img  class="search-icon"src="./images/search.svg" alt="pesquise aqui">
-       <input type="text" placeholder="Pesquisar no blog">
+       <form id="formSearchValue" action="" onsubmit="return false">
+        <input id="searchValue" type="text" placeholder="Pesquisar no blog">
+       </form>
      </div>
     </nav>
   </header>
@@ -36,7 +38,8 @@
   </main>
 
   <script type="module">
-    import {headlines} from './index.js'
+    import {headlines} from './scripts/headlines.js'
+    import {searchMechanism} from './scripts/search.js'
   </script>
 </body>
 </html>
