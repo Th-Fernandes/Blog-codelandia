@@ -63,19 +63,29 @@ body {
           margin: 0  1.3rem  0 .9rem;
         }
 
-        > input {
+        form {
           width: 100%;
-          background-color: transparent;
-          border: none;
-          color: $white;
 
           &:focus {
             outline: none;
+            background-color: transparent;
           }
 
-          &::placeholder {
-            color: rgba($white, $alpha: 0.2);
-            font-family: 'inter';
+          > input {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: $white;
+  
+            &:focus {
+              outline: none;
+              background-color: transparent;
+            }
+  
+            &::placeholder {
+              color: rgba($white, $alpha: 0.2);
+              font-family: 'inter';
+            }
           }
         }
         
@@ -92,9 +102,18 @@ body {
       width: min(37.4rem) max(100%);
       margin: 5rem auto;
       border-radius: .5rem;
-      box-shadow: $headline-shadow; 
-      
-      
+
+      > img {
+        display: block; 
+        width: auto; 
+        margin: 2rem auto;
+        cursor: pointer;
+        transition: .75s all;
+
+        &:hover {
+          transform: rotate(-360deg)
+        }
+      }
 
       .headline {
         width: min(34.7rem, 90%);

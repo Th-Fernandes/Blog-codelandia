@@ -50,16 +50,24 @@ body header.main-header nav .search-area {
 body header.main-header nav .search-area .search-icon {
   margin: 0 1.3rem 0 0.9rem;
 }
-body header.main-header nav .search-area > input {
+body header.main-header nav .search-area form {
+  width: 100%;
+}
+body header.main-header nav .search-area form:focus {
+  outline: none;
+  background-color: transparent;
+}
+body header.main-header nav .search-area form > input {
   width: 100%;
   background-color: transparent;
   border: none;
   color: #ffffff;
 }
-body header.main-header nav .search-area > input:focus {
+body header.main-header nav .search-area form > input:focus {
   outline: none;
+  background-color: transparent;
 }
-body header.main-header nav .search-area > input::placeholder {
+body header.main-header nav .search-area form > input::placeholder {
   color: rgba(255, 255, 255, 0.2);
   font-family: "inter";
 }
@@ -72,7 +80,16 @@ body main section.headlines {
   width: 37.4rem 100%;
   margin: 5rem auto;
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+}
+body main section.headlines > img {
+  display: block;
+  width: auto;
+  margin: 2rem auto;
+  cursor: pointer;
+  transition: 0.75s all;
+}
+body main section.headlines > img:hover {
+  transform: rotate(-360deg);
 }
 body main section.headlines .headline {
   width: min(34.7rem, 90%);
